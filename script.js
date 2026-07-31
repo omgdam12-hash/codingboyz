@@ -44,7 +44,7 @@ function forceLoadNavbar() {
         </ul>
         <div class="user-profile" onclick="toggleProfileModal()">
             <div class="user-text">
-                <span class="user-name">SKA HOST</span>
+                <span class="user-name">codingboyz</span>
                 <span class="user-role">Owner</span>
             </div>
             <video src="gemini_generated_video_c03390f3.mp4" autoplay loop muted playsinline class="user-profile-video"></video>
