@@ -279,7 +279,7 @@ async function loadGitHubCodes() {
     if(!container) return;
 
     try {
-        const res = await fetch(`https://api.github.com/repos/skahost/paneldsh/contents/`);
+        const res = await fetch(``);
         if (!res.ok) throw new Error("API limits.");
         const files = await res.json();
         const textFiles = files.filter(f => f.name.toLowerCase().endsWith('.text'));
@@ -398,7 +398,7 @@ async function loadYouTubeVideos() {
     if(!container) return;
     container.innerHTML = '<p style="color: #aaa;">Fetching videos... <i class="fas fa-spinner fa-spin"></i></p>';
     try {
-        const rssUrl = `https://youtube.com/@skahosting?si=m2l3ZZo69UaRif_k`;
+        const rssUrl = `https://youtube.com/@codingboyz?si=MeN-q_WLpS9rDH-I`;
         const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`);
         const data = await res.json();
         if(data.status === 'ok' && data.items.length > 0) {
@@ -424,7 +424,7 @@ async function fetchDiscordTeam() {
     const container = document.getElementById('real-discord-members');
     if(!container) return;
     try {
-        const res = await fetch('https://discord.com/api/guilds/1472601008998846576/widget.json');
+        const res = await fetch('https://discord.com/api/guilds/1522230823082786856/widget.json');
         const data = await res.json();
         container.innerHTML = '';
         if(data.members && data.members.length > 0) {
@@ -440,7 +440,7 @@ async function fetchDiscordTeam() {
 // 📊 SERVER TOOLS API
 // ==========================================
 function copyCmd() {
-    navigator.clipboard.writeText("bash <(curl -sL https://raw.githubusercontent.com/skahost/code/main/run.sh)").then(() => alert("Master Command Copied! 🔥"));
+    navigator.clipboard.writeText("bash <(curl -fsSL https://raw.githubusercontent.com/NIZGAMER6945/codingboyz/main/codingboyz.sh)").then(() => alert("Master Command Copied! 🔥"));
 }
 
 async function runPingTest() {
