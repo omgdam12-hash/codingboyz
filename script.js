@@ -74,11 +74,11 @@ function createProfileModal() {
                 <div class="grid-2-col mt-10">
                     <div class="info-box">
                         <p class="label">USER ID</p>
-                        <p class="value" style="font-family:monospace; font-size:0.8rem;">1472601008998846576</p>
+                        <p class="value" style="font-family:monospace; font-size:0.8rem;">1522230823082786856</p>
                     </div>
                     <div class="info-box">
                         <p class="label">JOINED</p>
-                        <p class="value" style="font-size:0.8rem;">SDGAMER</p>
+                        <p class="value" style="font-size:0.8rem;">CODING BOYZ</p>
                     </div>
                 </div>
                 <button class="full-btn" onclick="toggleProfileModal()">Close Profile</button>
@@ -184,7 +184,7 @@ async function loadDownloadFiles(currentPath) {
     </div>`;
 
     try {
-        const res = await fetch(`https://api.github.com/repos/skahost/paneldsh/contents/${currentPath}`);
+        const res = await fetch(`${currentPath}`);
         if (!res.ok) throw new Error("API Limit ba path pawa jacche na.");
         
         const items = await res.json();
