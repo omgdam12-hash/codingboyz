@@ -27,7 +27,7 @@ function forceLoadNavbar() {
     let navHTML = `
     <nav class="navbar">
         <div class="logo">
-            <video src="5b5bf53c3c2e2a592be214c827e58c38.png" autoplay loop muted playsinline class="logo-video"></video>
+            <img src="5b5bf53c3c2e2a592be214c827e58c38.png" alt="CODING BOYZ Logo" class="logo-image">         
             <div class="logo-text">
                 <span class="main-title">CODING BOYZ</span>
                 <span class="sub-title">DASHBOARD</span>
